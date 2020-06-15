@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Designmaz">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="Group%2027.png" type="image/x-icon">
+  <meta name="description" content="">
+  <title>About</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900">
+  <link rel="stylesheet" href="style.css"> 
+
+</head>
+    
+<body style="background-color: rgb(103, 58, 183);">
+    <section>
+         <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="topnav" id="myTopnav">
+        <div class="logo" id="other"> <img src="Group%2065.png"> </div>
+        <a id="quiz-btn" href="#"><b>TAKE THE QUIZ!</b></a>
+        <a href="contact.html">contact</a>
+        <a href="pricing.html">pricing</a>
+        <a href="services.html">services</a>
+        <a class="active" href="about.html">about</a>
+        <a href="index.html">home</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+ 
+    <div>
+    <button class="tablink" onclick="openPage('Home', this, '#f3558e')"><b>Who Are We?</b></button>
+<button class="tablink" onclick="openPage('News', this, '#EBBD34')" id="defaultOpen"><b>What Are We?</b></button>
+<button class="tablink" onclick="openPage('Contact', this, '#9c1de7')"><b>What Can We Do?</b></button>
+
+
+<div id="Home" class="tabcontent">
+  <h4>Meet The Team</h4>
+  <div>
+    <div class="row">
+  <div class="column">
+    <div class="card">
+        <div style="text-align: center">
+      <img src="toni.jpeg" alt="Toni-Ann" style="width:70%; padding-bottom: 63px; padding-top: 15px;">
+        </div>
+      <div class="container">
+        <h2>Toni-Ann Burrell</h2>
+        <p class="title">Communications and Marketing Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+        <div style="text-align: center">
+        <img src="joel.jpeg" alt="Joel" style="width:80%; padding-bottom: 122px; padding-top: 15px;">
+        </div>
+      <div class="container">
+        <h2>Joel Hanson</h2>
+        <p class="title">Art Director</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+        <div style="text-align: center">
+      <img src="tariq.jpg" alt="Tariq" style="width:70%; padding-top: 15px;">
+        </div>
+      <div class="container">
+        <h2>Tariq Kelly</h2>
+        <p class="title">Web Developer and Designer</p>
+        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+<div id="News" class="tabcontent">
+    <div style="text-align: center;">
+        <div style="width: 100%; background-color:#4B2A85; padding: 10px 1px">
+            <h4 style="font-size: 30px;">What is Earlybird Web Solutions?</h4>
+        </div>
+  <p style="font-size: 24px;"> Earlybird Web Solutions is a service here to provide you with high quality websites. We ensure that you are able to present yourself to a digital audience as best as possible, and as tailored to your needs as we can. As various institutions seek to interact with their members and customers at a faster, more efficient and creative platform, they need a strong online presence. With the global internet penetration rate being 59%, more and more people choose to conduct business and other transactions over the internet, we created this service to take the guesswork out of trying to design and develop a website. The introduction of this service allows our customers to focus on their business and allows us to take the weight of creating a website off of their shoulders. </p>
+<img src="2919097%20(1).png" style="width: 27%">
+        </div>
+</div>
+
+<div id="Contact" class="tabcontent">
+  <h4>Interactive Website Preview</h4>
+  <p>Want to see what we can do? Check out this interactive website preview below. The website is fully interactive and you are free to explore. This will give you a firsthand experience of our skills and what a website from us can do for you!</p>
+    <div style="text-align: center;">
+  <iframe src="C:\Users\tariq\Documents\Earlybird Website\Tech Club 2\index.html" width="1080" height="620" style="border: none;"></iframe>
+    </div>
+</div>
+  
+    
+    </div>
+    </section>
+</body>
+    
+<script>
+    function openPage(pageName, elmnt, color) {
+  // Hide all elements with class="tabcontent" by default */
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  // Remove the background color of all tablinks/buttons
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  // Show the specific tab content
+  document.getElementById(pageName).style.display = "block";
+
+  // Add the specific color to the button used to open the tab content
+  elmnt.style.backgroundColor = color;
+}
+
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+</script>

@@ -1,0 +1,515 @@
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+    background: rgb(103, 58, 183);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: #ff76d1;
+  border-radius: 5px;
+}
+::selection{
+  background: rgb(255, 230, 0);
+}
+body, html {
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    font-family: roboto;
+    scroll-behavior: smooth;
+    
+}
+body{
+  cursor: url(http://ani.cursors-4u.net/cursors/cur-11/cur1089.cur), auto !important;
+}
+/* The hero image */
+.hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+  background-image: linear-gradient(rgba(69, 40, 120, 0.2), rgba(90, 20, 214, 0.2)), url("main-hero.jpg");
+
+  /* Set a specific height */
+  height: 100%;
+  width: 100%;
+  
+
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: roboto;
+  font-weight: 300; 
+  font-size: 1.97vw;
+}
+
+.hero-text h1
+{
+    font-size: 19vw;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding-bottom: 0px;
+    bottom: 0px;
+    -webkit-text-fill-color:transparent;
+    -webkit-text-stroke:0.5vw white;
+    text-shadow: 7px 5px 15px #452878;
+}
+
+.hero-text h3
+{
+    font-weight: 300;
+    margin: 0px;
+    margin-bottom: 30px;
+    padding: 20px;
+    top: 0px;
+    letter-spacing: 20px;
+}
+
+#about-us-btn
+{
+  background-color: rgb(247, 196, 31);
+  
+  padding: 1.2vw 5vw;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin: 0.3vw 0.1vw;
+  cursor: pointer;
+  border-radius: 4vw;
+  border-style: none;
+  font-size: 15px;
+  transition: background-color 1s;
+}
+#about-us-btn a{
+  text-decoration: none;
+  color: white;
+}
+#about-us-btn:hover
+{
+    background-color: rgba(255,255,255,0.5);
+}
+
+
+/* Add a background color to the top navigation */
+.topnav {
+    position: relative;
+    background-color: transparent;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.logo
+{
+    display: inline-block;
+    position: relative;
+    margin: 0;
+    padding: 10px;
+    
+}
+.logo img
+{
+    width: 7.32vw;
+}
+
+#other img
+{
+    width: 50%;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    
+   float: right;
+  display: block;
+  color: #f2f2f2;
+    margin-top: 1.5vw;
+    margin-right: 0.7vw;
+  padding: 10px 25px;
+  text-decoration: none;
+  font-size: 17px;
+    transition: color 0.5s;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: #FF52C6;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color: #834AE8;
+  color: white;
+    border-radius: 50px;
+    padding: 0.7vw 3vw; 
+    transition: all 1.5s;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active:hover {
+  background-color:#734abd;
+  color: white;
+    border-radius: 50px;
+    padding: 0.7vw 3vw; 
+    box-shadow: 2px 0px 7px 2px #5d33a6;
+}
+
+.topnav #quiz-btn
+{
+  background-color: white;
+    color:#FF52C6;
+    border-radius: 40px;
+}
+.topnav #quiz-btn:hover
+{
+  background-color: #FF52C6;
+    color:white;
+    border-radius: 40px;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+.second
+{
+    background-image: url(Group%2064@2x.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    margin-top: 0;
+}
+.info
+{
+    padding-top: 13.5vw;
+    padding-left: 1.5vw;
+    padding-right: 51.2vw;
+}
+.info h1
+{
+    margin: 0;
+    color: white;
+    font-size: 3.1vw;
+    padding-bottom: 1.8vw;
+}
+.info p
+{
+    display: inline-block;
+    padding-top: 25px;
+    margin: 0;
+    padding-right: 50px;
+    font-size: 1.5vw;
+    color: white;
+    text-align: left;
+   
+}
+.textbox
+{
+    position: absolute;
+    left: 1.5vw;
+    bottom: -85%;
+    width: 40%;
+    float: left;
+    padding-right: 0px;
+}
+.imagebox img
+{
+    position: absolute;
+    left: 39.5vw;
+    top: 105%;
+    width: 60%;
+}
+.imagebox
+{
+    
+    width: 80%;
+    float: right;
+}
+
+.contact-form
+{
+ padding-top: 10px;
+ width: 640px;
+ margin: 0px auto;   
+}
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #303a52;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 33.3%;
+    transition: all 0.5s;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 100px 20px;
+  height: 100%;
+    
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* Three columns side by side */
+.column {
+  float: left;
+  width: 30%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+    border-radius: 10px;
+    background-color: #4B2A85;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  border-radius: 20px;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #2B2338;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+    
+
+  .topnav.responsive {
+      background-color: rgb(78, 43, 139);
+      position: relative;
+      z-index: 999;
+    }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .topnav.responsive a {
+    float: none;
+    display: flex;
+    text-align: left;
+  }
+
+.textbox
+{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+   
+}
+.textbook p
+    {
+        text-align: center;
+    }
+.imagebox img
+{
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+.imagebox
+{
+
+    width: 100%;
+}
+}
+
+.collapsible-container{
+  margin-top: 5%;
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #8c51f1;
+  color: #fff;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: all 0.5s;
+}
+.collapsible h3{
+  color: #fff;
+}
+.collapsible h3:after
+{
+  float: right;
+  font-family: FontAwesome;
+  content: "\f067";
+  color: #faabe0;
+}
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover{
+  background-color: #4c2b85;
+  box-shadow: 0 4px 2px 0 rgba(43, 43, 43, 0.137);
+}
+.active h3:after{
+  float: right;
+  font-family: FontAwesome;
+  content: "\f068";
+  color: #faabe0;
+  
+}
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  padding: 40px 18px;
+  max-height: 0;
+  display: none;
+  overflow: hidden;
+  background-color: #fff;
+  transition: max-height 0.2s ease-out;
+}
+.content p {
+  color: #51308a;
+}
+.container-skills{
+  margin-top: 25px;
+}
+
+#skills img {
+  max-width: 100px;
+  max-height: 100px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.skills-card{
+  background-color: rgb(243, 221, 248);
+  padding: 20px;
+  padding-bottom: 10px;
+  border-radius: 18px;
+  margin-left: 10px;
+  margin-right: 25px;
+  box-shadow: 0 4px 3px 1px rgba(0, 0, 0, 0.3), 0 -3px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.glow {
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #e60073, 0 0 30px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff4da6, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6;
+  }
+}
+
+.round-button {
+	box-sizing: border-box;
+	width:80px;
+	height:80px;
+	padding-top: 14px;
+	padding-left: 8px;
+	line-height: 20px;
+	border: 6px solid #fff;
+	border-radius: 50%;
+	color:#f5f5f5;
+	text-align:center;
+	text-decoration:none;
+	background-color: rgba(0,0,0,0.5);
+	font-size:20px;
+	font-weight:bold;
+	transition: all 0.3s ease;
+}
+.round-button:hover {
+	background-color: rgba(0,0,0,0.8);
+	box-shadow: 0px 0px 10px rgba(255,255,100,1);
+	text-shadow: 0px 0px 10px rgba(255,255,100,1);
+}
+
+.call-to-action{
+  display: inline-flex;
+  width: auto;
+
+}

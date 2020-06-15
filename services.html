@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="generator" content="Designmaz">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="Group%2027.png" type="image/x-icon">
+  <meta name="description" content="">
+  <title>Services</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900">
+  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/pricingstyle.css">  
+  <link rel="stylesheet" href="style.css"> 
+
+</head>
+    
+<body 
+style="background-color: rgb(103, 58, 183);
+  background: linear-gradient( #673ab7 , #9e6ef0 );">
+    <section>
+         <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <div class="topnav space80" id="myTopnav">
+        <div class="logo" id="other"> <img src="Group%2065.png"> </div>
+        <a id="quiz-btn" href="#"><b>TAKE THE QUIZ!</b></a>
+        <a href="contact.html">contact</a>
+        <a href="pricing.html">pricing</a>
+        <a class="active" href="services.html">services</a>
+        <a href="about.html">about</a>
+        <a href="index.html">home</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+    
+        <div class="container">
+            <div class="section-head-lite text-center col-md-8 col-md-offset-2">
+                <h1 class="mbr-title-font">Services</h1>
+                <p>Here's What We Can Do For You</p>
+            </div>
+         </div>
+     <div class="collapsible-container">
+        <button type="button" class="collapsible"><h3>Consultation</h3></button>
+            <div class="content">
+                <p style="font-size: 18px;">We help you understand the role digital can play in realizing strategic opportunities and solving real world problems, always keeping the focus on the user's experience and the results generated. We work closely with customers to create outstanding high performing and secure custom websites with a focus on unique, professional web design. When you book a consultation session with Earlybird Web Solutions we guide you with our expertise on breaking into the digital space with a website and ensure you are well-informed and well-equipped to go forward with implementing your plans. We will help you strategise the best way to launch your website.</p>
+            </div>
+        <button type="button" class="collapsible"><h3>Design</h3></button>
+            <div class="content">
+                <p style="font-size: 18px;">In today's world an attractively designed website is everything. With Earlybird Web Solutions we will work closely with you to ensure your website is beautifully designed according to modern industry standards and capable of standing the test of time. From wireframing, to mockups, to interactive prototype, we help you design your website with the user in mind and with your branding at the center. </p>
+            </div>
+        <button type="button" class="collapsible"><h3>Development</h3></button>
+            <div class="content">
+                <p style="font-size: 18px;">Lorem ipsum...</p>
+            </div>   
+    </div>         
+    </section>
+
+    <section id="skills">
+
+      <div class="container-skills" style="text-align: center;">
+  
+        <h1 style="color: #fff;">Skills</h1>
+        <hr class="style=seven" />
+  
+      <div class="skills-card">
+          <ul class="list-inline">
+           
+              <li>
+              <img src="http://jimkulakowski.com/web-design/img/skills-logos/html5-logo.png" alt="html5" title="HTML5">
+              </li>
+  
+              <li>
+                <img src="http://jimkulakowski.com/web-design/img/skills-logos/css-logo.png" alt="css" title="CSS">
+              </li>
+  
+              <li>
+                <img src="http://jimkulakowski.com/web-design/img/skills-logos/javascript-logo.png" alt="javascript" title="Javascript">
+                
+              </li>
+  
+              <li>
+                <img src="http://jimkulakowski.com/web-design/img/skills-logos/php-elephant-logo.png" alt="php" title="PHP">
+              </li>
+  
+              <li>
+                <img src="http://jimkulakowski.com/web-design/img/skills-logos/jquery-logo.png" alt="jquery" title="JQuery">
+              </li>
+  
+              <li>
+                <img src="http://jimkulakowski.com/web-design/img/skills-logos/bootstrap-logo.png" alt="bootstrap" title="Bootstrap">
+              </li>
+  
+              <li>
+                <img src="http://jimkulakowski.com/web-design/img/skills-logos/wordpress-logo.png" alt="wordpress" title="Wordpress">
+              </li>
+  
+              <li>
+                <img src="https://img.icons8.com/color/96/000000/adobe-xd.png" alt="adobe-xd" title="Adobe XD">
+              </li>
+  
+              <li>
+                <img src="https://img.icons8.com/color/96/000000/adobe-illustrator.png" alt="illustrator" title="Illustrator"/>
+              </li>
+  
+              <li>
+                <img src="https://img.icons8.com/color/96/000000/adobe-photoshop.png" alt="photoshop" title="Photoshop"/>
+              </li>
+            
+          </ul>
+      </div>
+  
+      </div>
+    </section>
+</body>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  });
+}
+</script>
+

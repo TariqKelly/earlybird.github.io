@@ -1,0 +1,757 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+    background: rgba(0,0,0,1);
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: dimgray;
+  border-radius: 10px;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/* Hero for each page */
+.home{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url(First.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    
+}
+.about{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.7)),url(about-hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center; 
+}
+.projects{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.3)),url(project-hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center; 
+}
+.contact{
+    background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url(contact-hero.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.donate{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)),url(donate.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Navigation Styling */
+#donate-btn{
+    background-color: #ffd91c;
+    border: none;
+    border-radius: 16px;
+}
+#donate-btn a{
+    color: #02079c;
+    padding: 10px 20px;
+}
+#donate-btn a:hover{
+    border-radius: 0px;
+    background: #fcde4c;   
+}
+.nav-list{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+.nav-list li{
+    display:inline-flex;
+}
+.nav-list li a{
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 550;
+    font-size: 15px;
+    transition: 0.3s;
+}
+.nav-item a.active{
+    border-radius: 8px;
+    border-top-left-radius: 0px;
+    border: 3px solid #8be63c;
+}
+.nav-item a.about-active{
+    border-radius: 8px;
+    border-top-left-radius: 0px;
+    border: 3px solid darkcyan;
+}
+.nav-item a.projects-active{
+    border-radius: 8px;
+    border-top-left-radius: 0px;
+    border: 3px solid #340999;
+}
+.nav-item a.contact-active{
+    border-radius: 8px;
+    border-top-left-radius: 0px;    
+    border: 3px solid #bf8f49;
+}
+.nav-list li a:hover{
+    border-radius: 8px;
+    background: #8be63c;
+}
+.nav-list li a.projects-nav:hover{
+    border-radius: 8px;
+    background: #340999;
+}
+.nav-list li a.contact-nav:hover{
+    border-radius: 8px;
+    background: #bf8f49;
+}
+.nav-list li a.about-nav:hover{
+    border-radius: 8px;
+    background: darkcyan;
+}
+
+/*set body font to monospace */
+body{
+    font-family: monospace;
+}
+
+/* header elements */
+.row{
+    max-width: 1200px;
+    margin: auto;
+}
+.hero{
+    position:absolute;
+    width: 97%;
+    height: 0px;
+    margin-left: 0;
+    margin-top: 0;
+}
+.hero h1{
+    color: white;
+    text-align: center;
+    font-size: 10vw;
+    margin-top: 275px;
+    margin-bottom: 
+    
+}
+.hero #home-sub{
+    color:#8be63c;
+}
+.hero h3{
+    color: white;
+    text-align: center;
+    font-size: 2.5vw;
+    margin-top: 0px;
+    
+    
+}
+.sub{
+    
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.about-sub{
+    background-color: darkcyan;
+}
+.projects-sub{
+    background-color: #340999;
+}
+.contact-sub{
+    background: #bf8f49;
+}
+.about-body{
+    background:#262626;
+    color: white;
+    padding: 5%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 6.5vh;
+    text-align: center;
+}
+#end{
+    background: darkcyan; 
+    font-size: 5vw;
+}
+
+/* first section of home*/
+.first{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(Second.jpg);
+    background-position: center;
+    background-size: cover;
+    height:500px;
+    font-family: 'Roboto',sans-serif;
+}
+.first h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: white;
+    padding-top: 140px;
+    padding-left: 2%;
+    font-size: 45px;
+    text-shadow: 2px 3px 9px #424242;
+    animation: textanimate 0.5s ease-in-out infinite forwards;
+    
+}
+.first p{ 
+    display: flex;
+    flex-flow: wrap;
+    color: #ff741c;
+    font-weight: 600;
+    font-size: 19px;
+    text-align: left;
+    width: 600px;
+    margin-left: 2%;
+    padding-bottom: 5px;
+    text-shadow: 1px 1px 9px #424242;
+}
+
+/* second section of home */
+.second{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(third.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 500px;
+    font-family: 'Roboto',sans-serif;
+}
+.second h1{
+    font-family: 'Montserrat', sans-serif;
+    text-align: right;
+    float: right;
+    font-weight: 700;
+    color: white;
+    padding-top: 140px;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 45px;
+    text-shadow: 2px 3px 9px #424242;
+}
+.second p{ 
+    float: right;
+    text-align: right;
+    color: darkcyan;
+    font-weight: 600;
+    font-size: 19px;
+    width: 600px;
+    margin-left: 1200px;
+    padding-bottom: 5px;
+    padding-right: 2%;
+    text-shadow: 1px 1px 9px #424242;
+}
+
+/* buttons on home */
+#btn1{
+padding-left: 0.7%;    
+}
+#btn1 a
+{
+    display: flex;
+    flex-grow: 1;
+    margin: 8px;
+    padding: 5px;
+    margin-top: 15px;
+    margin-left: 12px;
+    width: 75px;
+    color: white;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #ff741c /*#ab5e2e*/;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 5px #ab5e2e;
+}
+#btn1 a:hover{
+    background: #ff741c;
+    border-style: solid;
+}
+#btn2{
+    float: right;
+    padding-right: 2%;
+}
+#btn2 a
+{
+    display: flex;
+    flex-grow: 1;
+    margin: 8px;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 12px;
+    width: 100px;
+    color: white;
+    border-radius: 15px;
+    border: 3px solid darkcyan;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: 1px 1px 5px darkcyan;
+}
+#btn2 a:hover{
+    background: darkcyan;
+    border-style: solid;
+}
+
+/* scroll animation */
+.scroll{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    width: 40px;
+    height: 40px;
+    transform: translateY(-80px) translateX(-50%) rotate(45deg);
+}
+.scroll span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    animation: animate 1.5s linear infinite;
+    opacity: 0;
+}
+.scroll span:nth-child(1){
+    transform: translate(-15px,-15px);
+    animation-delay: -0.4s;
+}
+.scroll span:nth-child(2){
+    transform: translate(0,0);
+    animation-delay: -0.2s;
+}
+.scroll span:nth-child(3){
+    transform: translate(15px,15px);
+    animation-delay: 0s;
+}
+@keyframes animate{
+    0%{
+        top: -5px;
+        left: -5px;
+        opacity: 0;
+    }
+    25%{
+        top: 0px;
+        left: 0px;
+        opacity: 1;
+    } 
+    50%, 100%{
+        top: 5px;
+        left: 5px;
+        opacity: 0;
+    }
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resize the textarea */
+}
+
+label 
+{
+    font-family: sans-serif;
+}
+
+#contact-head{
+    font-size: 64px;
+    padding-bottom: 30px;
+}
+
+/* Style the submit button with a specific background color etc 
+input[type=submit] {
+  background-color: #bf8f49;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+*/
+
+/* Style the submit button with a specific background color etc */
+#submit {
+  background-color: #bf8f49;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker color */
+#submit:hover {
+  background-color: #b08445;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    background-color:#ffdba6;
+  padding: 100px;
+}
+
+/* footer elements */
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(6,10,18,0.6);
+    height: 38px;
+}
+.footer-items{
+    color: white;
+    display: inline-flex;
+    list-style: none;
+    font-size: 12px;
+    text-align: center;
+    margin-left: 0px;
+    font-family: sans-serif;
+    float: right;
+}
+.footer-items li{
+    padding: 10px;
+}
+.footer-items li a{
+    text-decoration: none;
+    color: white;
+}
+
+/* section with the projects done */
+.projects-gallery{
+   background: #000208;
+    height: 500px;
+}
+.projects-head{
+    font-family: 'Montserrat', 'sans-serif';
+    color: white;
+    padding: 10px;
+}
+
+/* Style the Image Used to Trigger the Modal */
+#myImg {
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+    padding: 10px;
+}
+#myImg:hover {opacity: 0.7;}
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+/* Modal Content (Image) */
+.modal-content {
+    margin: 0 auto;
+  width: 80%;
+  max-width:700px;
+}
+.modal-container {
+width: fit-content;
+    text-align: center;
+  display: block;
+  position: relative;
+  max-width: 80%; /* Maximum width */
+  margin: 0 auto; /* Center it */
+}
+.text-block{
+    position: absolute;
+    opacity: 0;
+    transition: 0.2s;
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 600px;
+    bottom: 20px;
+  right: 1px;
+}
+.modal-container:hover .text-block {
+  opacity: 1;
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+    max-width: 500px;
+    font-family: monospace;
+    font-size: 1.5vw;
+}
+/* Caption of Modal Image (Image Text) - Same Width as the Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 500px;
+  text-align: center;
+  color: #ccc;
+  padding: 15px 0;
+  height: 300px;
+font-size: 20px;
+}
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 450px){
+    .hero h1{
+    color: white;
+    text-align: center;
+    font-size: 10vw;
+    margin-top: 30%;
+    
+}
+    
+}
+/* contact card */
+/* sets bg color and height of card */ 
+.contact-card{
+    background-color: #bf8f49;
+    height: 500px;
+}
+.card {
+  /* Add shadows to create the "card" effect */
+    background: #ffdba6;
+    display: inline-block;
+    width: 30vh;
+    padding: 50px;
+    margin-right: 170px;
+    margin-top: 85px;
+    
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.4);
+    transition: 0.3s;
+    border-radius: 8px;
+    font-family: 'Roboto';
+}
+/* margins for cards */
+.left{
+    margin-left: 20%;
+}
+.right{
+    margin-right: 1%;
+}
+/*color of text */
+.card-text{
+    color: #333333;
+}
+.card-link{
+    text-decoration: none;
+    color: #806f5d;
+}
+.card-link:hover{
+    color:#a35d12;
+    text-decoration: none;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.8);
+}
+/* Add some padding inside the card container */
+.card-container {
+    padding-left: 10px;
+  padding: 16px 2px;
+    
+}
+.text-block-head{
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: white;
+}
+img{
+    border-radius: 9px;
+}
+
+@media only screen and (max-width: 1020px) {
+  .right {
+    margin-left: 195px;  
+  }
+}
+@media only screen and (max-width: 1020px) {
+  .contact-card {
+      height: 150vh;
+  }
+}
+
+@keyframes yourAnimation{
+    0%{
+        transform: rotate(0) translateY(-20%);
+        opacity: 0;
+        }
+    100%{
+        transform: rotate(0) translateY(0);
+        opacity: 1;
+        }
+}
+
+.anim{
+    animation: yourAnimation 1s forwards 0.5s ease-in-out;
+}
+
+/* The snackbar - position it at the bottom and in the middle of the screen */
+#snackbar {
+  visibility: hidden; /* Hidden by default. Visible on click */
+  min-width: 250px; /* Set a default minimum width */
+  margin-left: -125px; /* Divide value of min-width by 2 */
+  background-color: #946f38; /* Background color */
+  color: #fff; /* White text color */
+  text-align: center; /* Centered text */
+  border-radius: 2px; /* Rounded borders */
+  padding: 16px; /* Padding */
+  position: fixed; /* Sit on top of the screen */
+  z-index: 1; /* Add a z-index if needed */
+  left: 50%; /* Center the snackbar */
+  bottom: 70px; /* 30px from the bottom */
+}
+
+/* Show the snackbar when clicking on a button (class added with JavaScript) */
+#snackbar.show {
+  visibility: visible; /* Show the snackbar */
+  /* Add animation: Take 0.5 seconds to fade in and out the snackbar.
+  However, delay the fade out process for 2.5 seconds */
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+/* Animations to fade the snackbar in and out */
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 70px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 70px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 70px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 70px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+/* Create three columns of equal width */
+.columns {
+  display:inline-flex;
+  flex-direction:row-reverse;
+  float: left;
+  width: 50%;
+  margin-bottom: 5%;
+  padding: 8px;  
+}
+
+/* Style the list */
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+/* Pricing header */
+.price .header {
+  background-color: #111;
+  color: white;
+  font-size: 25px;
+}
+
+/* List items */
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Grey list item */
+.price .grey {
+  background-color: #eee;
+  font-size: 20px;
+}
+
+/* The "Sign Up" button */
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Change the width of the three columns to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
